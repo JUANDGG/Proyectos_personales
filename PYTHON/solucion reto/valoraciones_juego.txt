@@ -1,0 +1,7 @@
+cords|2
+cords|2
+halo|5
+halo|5
+minecraft|8
+minecraft|8
+call of duty|50

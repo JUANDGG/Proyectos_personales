@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f2f2f2;   
+}
+
+
+header{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #48e;
+    color: #f2f2f2;
+}
+
+header >h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+header > h1 + nav > ul > li{
+    list-style: none;
+    padding: 10px 20px;
+    height: 0px;
+    background-color: #ccc;
+    display: inline;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+
+main{
+    padding: 10px 20px;
+}
+
+main>div{
+
+    width: 90%;
+    margin: auto;
+    margin: 10px 20px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+main>div>article{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+main>div>article>h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #3d4e91;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 10px;
+    
+    border-left: 6px solid #48e ; 
+    
+}
+
+main>div>article>p{
+    
+    padding: 10px 20px;
+    border-left: 6px solid #48e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main>div>article>input{
+    padding: 10px 20px;
+    border:none;
+    margin-right: 20px;
+    
+}
+
+main>div>article>input[type='text']{
+    width: 100%;
+    margin-bottom: 10px;
+    border-left:6px solid #48e;
+    outline: none;
+}
+
+main>div>article>input[type='text']:focus{
+    border-top: 2px  solid #48e;
+    border-bottom: 2px  solid #48e;
+    border-right: 2px  solid #48e;
+    
+    
+}
+
+main>div>article>input[type='submit']{
+    background-color: #48e;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+main>div>article>input[type='submit']:hover{
+    background-color: #3d4e91;
+}

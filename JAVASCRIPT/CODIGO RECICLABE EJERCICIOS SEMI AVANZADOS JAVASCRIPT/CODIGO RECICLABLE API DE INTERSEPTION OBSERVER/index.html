@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-cabecero">
+        <header class="container-cabecero__encabesado">
+            <h2 class="container-cabecero__encabesado-titulo">FACEBOOK</h2>
+            <div class="container-cabecero__encabesado-btnDesplegable" id="btnContainerDesplegable">...</div>
+            <ul class="container-cabecero__encabesado-lista container-cabecero__encabesado-lista-displayNone" id="containerDesplegable">
+                <li class="container-cabecero__encabesado-lista-item"></li>
+                <li class="container-cabecero__encabesado-lista-item"></li>
+                <li class="container-cabecero__encabesado-lista-item"></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- aqui cargamos nuestras publicaciones -->
+    <div class="container-main">
+        <div id="root-publicaciones" class="root-publicaciones"></div>
+    </div>
+
+   
+    <script src="conexionPublis.js"></script>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>

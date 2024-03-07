@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+    
+}
+
+
+.formulario{
+    
+    height:25rem;
+    border-radius: 10px;
+    background-color: #ffff;
+    box-shadow:20px 20px 20px #c3c3c3;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+
+}
+
+
+
+.formDataUser {
+    margin-top: 1em;
+
+}
+
+
+.formDataUser input{
+    padding: 0.4rem;
+}
+
+.contInptsDataUserTop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contInptsDataUserTop input{
+    flex-grow: 1;
+}
+
+.InptNameUser{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.formPassUser{
+    display:flex;
+    gap:0.5rem;
+    margin-top:1em;
+}
+
+.formPassUser input{
+    flex-grow:1;
+    padding:0.4rem;
+}
+
+
+input{
+    border: none;
+    border-bottom: 1px solid #8a8989;
+    
+}
+
+.formCheckUser{
+    margin-top:1em;
+}
+
+.check{    
+    padding:0em 0em 1em 0em;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+
+}
+
+.buttonCheck{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonCheck a{
+    text-align: center;
+    width: 7rem;
+    color: #ffff;
+    background-color:#4285f4 ;
+    text-decoration: none;
+    padding: 0.5rem;
+    box-shadow: 20px 20px 20px #c3c3c3;
+    border-radius: 5px;
+}
+
+.buttonCheck a:hover{
+    background-color: #2a59a4;
+}
+
+@media  (max-width:700px) {
+
+  
+
+    .formulario{
+        display: flex;
+        min-width: 40vw;
+    }
+
+   
+ 
+    .container2{
+        display: none;
+    }
+}

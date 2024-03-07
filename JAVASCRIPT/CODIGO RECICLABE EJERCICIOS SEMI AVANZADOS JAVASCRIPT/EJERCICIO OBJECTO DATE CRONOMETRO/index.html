@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            height: 100vh;
+            text-align: center;
+            background-color: #4b3689;
+        }
+
+
+        .container{
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            background-color:#000;
+            color: #fff;
+            
+        }
+
+        h3{
+            padding-top: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #00f;
+        }
+        
+
+        .cronometro{
+            width: 100%;
+            position:absolute;
+            bottom: 0;
+            padding: 1em;
+            margin-bottom: 2em;
+            background-color:#000;
+            color: #ffff;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .cronometro__minutos,.cronometro__segundos{
+            font-size: 2em;
+            padding: 0.2em;
+            border-radius: 2px;
+            display: inline-block;
+            background-color: #808080;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h3 >TIENES 2 MINUTOS</h3>
+        <div class="cronometro">
+            <div class="cronometro__minutos">00</div>
+            <div class="cronometro__segundos">00</div>
+        </div>
+    </div>
+
+    
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>

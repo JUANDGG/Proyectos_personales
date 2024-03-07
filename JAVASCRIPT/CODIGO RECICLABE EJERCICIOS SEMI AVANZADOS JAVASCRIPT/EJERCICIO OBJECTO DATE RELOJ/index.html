@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            padding:4em;
+            background-color:black;
+            color: aliceblue;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+
+
+        .container__hora , .container__minutos, .container__segundos{
+            display: inline;
+            padding: 2px;
+            margin-left: 1em;
+            border-radius: 50%;
+            background-color: grey;
+            padding: 2em;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <section class="container">
+        <div class="container__hora" id="hora">00</div>
+        <div class="container__minutos" id="minutos">00</div>
+        <div class="container__segundos" id="segundos">00</div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

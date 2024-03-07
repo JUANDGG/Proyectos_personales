@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #carga {
+            text-align: center;
+            padding: 100px;
+            width: 80vw;
+            min-height: 100vh;
+            margin: 0 auto;
+            background-color:#ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="carga"></div>
+
+    <video src="" ></video>
+
+    <script>
+
+        const zonaCarga = document.getElementById('carga');
+
+        zonaCarga.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        })
+
+
+        zonaCarga.addEventListener('drop', (e) => {
+            e.preventDefault();
+            cargaVideo(e.dataTransfer.files)
+        })
+
+
+
+
+        
+        const cargaVideo = (url)=>{
+            //puedo meter varias cosas si yo quiero ala vez
+            for(let i of url){
+                const readervideo = new FileReader();
+                readervideo.readAsArrayBuffer(i)
+
+                //progrees es para es el progreso de carga del archivo
+                readervideo.addEventListener('progress',(e)=>{
+                    //el e.loaded es para saber cuanto cargo el archivo
+                    //el e.size es cuanto pesa el archivo
+                    //para ver el progreso lo que hacemos es basicamente la carga sobre el peso del archivo multiplicado * 100 para que me de el porcentaje de la carga
+                    let carga=(e.loaded / e.size * 100)
+                    console.log(carga)
+                })
+
+                readervideo.addEventListener('load',(e)=>{
+                    let video = new Blob([new Uint8Array(e.currentTarget.result)],{type:'video/mp4'})
+                    let urlVideo =URL.createObjectURL(video)
+                    const createElementVideo = document.createElement('VIDEO')
+                    createElementVideo.setAttribute('src',urlVideo)
+                    zonaCarga.appendChild(createElementVideo)
+                    createElementVideo.play()
+                    
+                })
+                
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

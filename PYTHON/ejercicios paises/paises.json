@@ -1,0 +1,74 @@
+{
+    "paises": [
+      {
+        "nombre": "Colombia",
+        "poblacion": 51000000,
+        "moneda": "Peso colombiano",
+        "continente": "América",
+        "area": 1140000
+      },
+      {
+        "nombre": "Estados Unidos",
+        "poblacion": 331000000,
+        "moneda": "Dólar estadounidense",
+        "continente": "América",
+        "area": 9834000
+      },
+      {
+        "nombre": "China",
+        "poblacion": 1439323776,
+        "moneda": "Yuan chino",
+        "continente": "Asia",
+        "area": 9706961
+      },
+      {
+        "nombre": "India",
+        "poblacion": 1380004385,
+        "moneda": "Rupia india",
+        "continente": "Asia",
+        "area": 3287263
+      },
+      {
+        "nombre": "Brasil",
+        "poblacion": 212559417,
+        "moneda": "Real brasileño",
+        "continente": "América",
+        "area": 8515770
+      },
+      {
+        "nombre": "Rusia",
+        "poblacion": 146171015,
+        "moneda": "Rublo ruso",
+        "continente": "Europa/Asia",
+        "area": 17125242
+      },
+      {
+        "nombre": "Canadá",
+        "poblacion": 38005238,
+        "moneda": "Dólar canadiense",
+        "continente": "América",
+        "area": 9984670
+      },
+      {
+        "nombre": "Australia",
+        "poblacion": 25788200,
+        "moneda": "Dólar australiano",
+        "continente": "Oceanía",
+        "area": 7692024
+      },
+      {
+        "nombre": "Egipto",
+        "poblacion": 104258327,
+        "moneda": "Libra egipcia",
+        "continente": "África",
+        "area": 1010408
+      },
+      {
+        "nombre": "Sudáfrica",
+        "poblacion": 59622350,
+        "moneda": "Rand sudafricano",
+        "continente": "África",
+        "area": 1214470
+      }
+    ]
+  }

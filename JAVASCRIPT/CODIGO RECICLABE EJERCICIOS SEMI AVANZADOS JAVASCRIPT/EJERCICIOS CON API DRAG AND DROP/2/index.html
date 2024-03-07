@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            position: relative;
+            min-height: 100vh;
+            
+        }
+
+        #circulo{
+            padding: 100px;
+            background-color: red;
+            border-radius: 50%;
+            width: 1%;
+        }
+
+        #rectangulo{
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            margin-bottom: 14rem;
+            padding: 150px;
+            background-color: #ccc;
+            outline: 6px dashed #0c0c;
+        }
+    </style>
+
+    
+    
+</head>
+<body>
+    
+    <div id="circulo"></div>
+    <div id="rectangulo"></div>
+
+
+    <script>
+
+        "use stritct";
+        const circulo = document.getElementById('circulo')
+        const rectangulo = document.getElementById('rectangulo')
+
+        circulo.addEventListener('dragstart', e =>{})
+
+        rectangulo.addEventListener('dragover',(e)=>{
+            e.preventDefault()
+        })
+
+        rectangulo.addEventListener('drop' ,(e)=>{
+            rectangulo.appendChild(circulo)
+            
+            
+            
+        })
+    </script>
+</body>
+</html>

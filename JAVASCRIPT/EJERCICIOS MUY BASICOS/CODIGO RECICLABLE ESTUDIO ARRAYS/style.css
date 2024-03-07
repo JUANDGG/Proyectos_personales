@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+
+#padre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4px;
+
+}
+
+
+
+.arr1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 200px;
+    width: 70%;
+    background-color: rgb(49, 44, 44);
+    color: aliceblue;
+
+}
+
+.arr1 p{
+    flex-grow: 1;
+    flex-basis: 300px;
+}

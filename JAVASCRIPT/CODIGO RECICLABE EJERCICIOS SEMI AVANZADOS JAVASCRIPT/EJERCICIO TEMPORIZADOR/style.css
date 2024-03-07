@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+h1{
+    position: absolute;
+    top: 0;
+}
+
+.container{
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.container__minutos , .container__segundos{
+    display: inline;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: gray;
+
+}

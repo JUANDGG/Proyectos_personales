@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+
+
+        .seccion1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            background-color: antiquewhite;
+        }
+    
+        .cabecero{
+            width: 100%;
+            padding: 2em;
+            text-align: center;
+            background-color: #0affd2dd;
+            
+        }
+
+
+
+
+        .containerCabecero1{
+            display: flex;
+            gap: 3em;
+            flex-wrap: wrap;
+            width: 100%;
+
+
+        }
+
+        .containerCabecero1 article{
+            text-align: center;;
+            background-color: tomato;
+            flex-grow: 1;
+            flex-basis: 350px;
+            padding: 3em;
+        }
+
+        .containerCabecero2{
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            width: 100%;
+            
+        }
+
+        .containerCabecero2 article{
+            background-color: red;
+            padding: 3em;
+            flex-grow: 1;
+            flex-basis: 200px;
+            text-align: center;;
+        }
+        
+
+        .seccion2{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+       
+    
+
+        .containerMediun1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        .conArtMediun1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            width: 100%;
+        }
+
+
+        .conArtMediun1 article{
+            flex-grow: 1;
+            flex-basis: 350px;
+            padding: 2em;
+            text-align: center;
+            background-color: rgb(252, 248, 0);
+        }
+
+       .con1{
+            padding: 2em;
+            text-align: center;
+            width: 100%;
+            background-color: rebeccapurple;
+       }
+
+       .containerMediun2{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+       }
+
+       .con2{
+            padding: 2em;
+            text-align: center;
+            background-color: blue;
+       }
+
+
+       .conArtMediun2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        
+       }
+
+
+       .conArtMediun2 article{
+            flex-grow: 1;
+            flex-basis: 350px;
+            padding: 2em;
+            background-color: rgb(255, 0, 43);
+       }
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <section class="seccion1">
+        <div class="cabecero"><div><p>1</p></div></div>
+        <div class="containerCabecero1">
+            <article class="target1"><p>2</p></article>
+            <article class="target2"><p>3</p></article>
+        </div>    
+        
+        <div class="containerCabecero2">
+            <article class="target3"><p>4</p></article>
+            <article class="target4"><p>5</p></article>
+            <article class="target5"><p>6</p></article>
+        </div>
+    </section>
+
+
+    <section class="seccion2">
+        <div class="containerMediun1">
+            <div class="conArtMediun1" >
+                <article><p>7</p></article>
+                <article><p>8</p></article>
+            </div>
+            <article class="con1"><p>9</p></article>
+        </div>
+
+        <div class="containerMediun2">
+            <article class="con2"><p>9</p></article>
+            <div class="conArtMediun2" >
+                <article><p>7</p></article>
+                <article><p>8</p></article>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="seccion3">
+
+    </section>
+    
+
+
+
+</body>
+</html>

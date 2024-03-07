@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+
+        .modal{
+            
+            text-align: center;
+            background-color: gray;
+            width: 20em;
+            box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+            padding: 0.5em;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .aparence{
+            display: none;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    
+
+    <div class="modal aparence" >
+        <p>en que idioma deseas ver la pagina ?</p>
+        <button id="espanol">espanol</button> <button id="ingles">Ingles</button>
+    </div>
+    
+
+    <script >
+        const modal = document.querySelector(".modal")
+        const cerrarModal = (clase)=>modal.classList.toggle(clase)
+        const addModal =()=>{
+            modal.classList.toggle('aparence')
+            document.getElementById('espanol').addEventListener('click',()=>{
+                localStorage.setItem('es','espanol')
+                document.querySelector('html').setAttribute('lang','es')
+                cerrarModal('aparence')
+            })
+
+            document.getElementById('ingles').addEventListener('click',()=>{
+                localStorage.setItem('en','ingles')
+                
+                document.querySelector('html').setAttribute('lang','en')
+                cerrarModal('aparence')
+            })
+        }
+
+
+        localStorage.length==1 ? false:setTimeout(addModal,1000)
+
+        
+    </script>
+</body>
+</html>

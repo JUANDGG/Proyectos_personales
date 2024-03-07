@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .title {
+            color: #3f2455;
+            text-transform: uppercase;
+            line-height: 4px;
+            font-weight: 800;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+
+        input {
+            padding: 0.5em;
+            border: none;
+        }
+
+
+        input[type='number'] {
+            border-bottom: 3px solid #3f2455;
+            outline: none;
+        }
+
+
+        input[type='number']:focus {
+            background-color: #ccc;
+
+        }
+
+
+        input[type='submit']:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="title">Count</h1>
+
+    <div class="container">
+        <input type="number" placeholder="Ingresa un numero" id="getData">
+        <input type="submit" id="setData">
+    </div>
+
+    <div>
+        <h1 id="countPrint"></h1>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

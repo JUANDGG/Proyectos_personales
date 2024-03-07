@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+ 
+    display: grid;
+    /* 
+     aca le digo que abarque una columna el 50% de la pantalla y el otro 50% 
+    grid-template-columns: 50% 50%; 
+    */
+
+    /* otra manera de hacer lo de arrriba es asi */
+
+
+    grid-template-columns: repeat(auto-fill, auto-fit);
+    /* el minimo no importa lo grande de una imagen o texto como minimo las filas van a ocupar como minimo 100px y como maximo seran automaticas */
+    grid-template-rows: minmax(100px,auto);
+    
+    grid-gap: 5px;
+    
+    margin: 100px;
+
+}
+
+.grid-container div{
+    padding: 1em;
+    border: 2px solid #000;
+}
+.grid-container div:first-child{
+    /* grid area se cambia de pocicion el contenido a donde queramos */
+/*     grid-area: 2/1; */
+
+    /* con grid column abarca una columna cuantas columnas nosotros queramos */
+    grid-column: 1/4;
+    
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:minmax(20px, auto) ;
+    justify-items: stretch;
+    
+    grid-gap: 5px;
+}
+.grid-container div:first-child>div{
+    background-color: yellow;
+}

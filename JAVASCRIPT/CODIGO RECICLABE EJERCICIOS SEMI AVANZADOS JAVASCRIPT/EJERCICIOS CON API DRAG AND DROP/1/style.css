@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+
+
+.contenedor{
+    margin: 4em;
+    width: 50%;
+    outline: 6px dashed #898989 ;
+    padding: 200px;
+    background-color: #99c8cf;
+    text-align: center;
+    font-size: 2em;
+    font-family: bold;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    user-select: none;
+
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+    padding: 2em;
+    
+    
+}
+
+.imagenes>img{
+    width: 100px;
+}
+
+.imagenes>img:active{
+    opacity: 0.55;
+}

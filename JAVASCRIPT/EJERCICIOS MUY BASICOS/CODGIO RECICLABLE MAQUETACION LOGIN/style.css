@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:google;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.containerLogin{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.containerLogin div{
+    width: 30%;
+}
+
+.containerLogin h1{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.containerLogin form{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+
+input{
+    padding: 0.2rem;
+    border-style: none;
+    border-bottom: 2px solid #000000;
+}
+
+input[type='submit']{
+    background-color: #000000;
+    border-style: none;
+    color: #ffff;
+    width: 30%;
+}
+
+input[type='submit']:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.btnWhapsap{
+    min-height: 100vh;
+    display: flex;
+    align-items:end;
+    
+}
+
+
+.btnWhapsap div{
+    color: #ffff;
+    margin: 1em;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btnWhapsap div:hover{
+    cursor: pointer;
+}
